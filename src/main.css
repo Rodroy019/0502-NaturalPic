@@ -37,7 +37,10 @@ a {
 .grid-columns-4 {
   grid-template-columns: repeat(4, 1fr);
 }
-
+.gallery-image{
+  width: 200px;
+  height: 200px;
+}
 .gallery .photo {
   cursor: pointer;
   padding: 10px 10px 0px 10px;
@@ -74,4 +77,5 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
 }

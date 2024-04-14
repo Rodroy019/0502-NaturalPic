@@ -4,8 +4,6 @@ import Favorites from './views/Favorites'
 import Home from './views/Home'
 import NotFound from './views/NotFound'
 
-const PHOTO_URL = './photos.json'
-
 const App = () => {
   return (
     <div>
@@ -27,4 +25,5 @@ const App = () => {
     </div>
   )
 }
+
 export default App
