@@ -1,4 +1,5 @@
 import Card from 'react-bootstrap/Card'
+import IconHeart from './IconHeart'
 
 const Gallery = ({ image }) => {
   return (
@@ -11,6 +12,7 @@ const Gallery = ({ image }) => {
           <Card.Text>
             {image.alt}
           </Card.Text>
+          <IconHeart filled={image.liked} />
         </Card.ImgOverlay>
       </Card>
     </div>

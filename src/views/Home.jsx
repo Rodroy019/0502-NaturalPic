@@ -6,7 +6,7 @@ const Home = () => {
   const { images } = useContext(LikeMe)
 
   return (
-    <div className='App'>
+    <div className='container'>
       <h1 className='m-4 text-center'>Natural Pic</h1>
       <div className='row'>
         {images.map(image => (
