@@ -5,7 +5,7 @@ body {
 .App {
   font-family: "Maitree", serif;
   text-align: center;
-  color: #43a047;
+  color: blueviolet;
 }
 
 h1 {
@@ -20,53 +20,11 @@ a {
 }
 
 .navbar {
-  background: #43a047;
+  background: blueviolet;
   padding: 20px;
   color: white;
 }
 
-/* gallery */
-.gallery {
-  display: grid;
-  gap: 10px;
-}
-
-.grid-columns-5 {
-  grid-template-columns: repeat(5, 1fr);
-}
-.grid-columns-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-.gallery-image{
-  width: 200px;
-  height: 200px;
-}
-.gallery .photo {
-  cursor: pointer;
-  padding: 10px 10px 0px 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: left;
-  text-shadow: 0px 0px 15px black;
-}
-
-.gallery .photo:hover {
-  box-shadow: 0px 0px 2px 1px black;
-}
-
-.gallery .photo svg {
-  align-self: flex-end;
-}
-
-.p-3 {
-  padding: 30px;
-}
 
 /* NotFound */
 .centered-image {
@@ -78,4 +36,28 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
+}
+
+/* Ajustar el tamaño de la tarjeta */
+.card {
+  width: 200px; /* Ancho deseado para la tarjeta */
+  height: 200px; /* Altura deseada para la tarjeta */
+}
+
+/* Estilo para la imagen dentro de la tarjeta */
+.card-img-top {
+  width: 100%; /* Ajustar la imagen al tamaño de la tarjeta */
+  height: 100%; /* Ajustar la imagen al tamaño de la tarjeta */
+  object-fit: cover; /* Cubrir toda la área de la imagen */
+}
+
+/* Estilo para el texto dentro de la tarjeta */
+.card-body {
+  background-color: #343a40; /* Color de fondo oscuro */
+}
+
+.card-text {
+  color: white; /* Color del texto */
+  font-size: 18px; /* Tamaño de fuente del texto */
+  text-align: start;
 }

@@ -1,20 +1,22 @@
-import { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
+const PHOTO_URL = '/photos.json'
 
 export const LikeMe = createContext()
 
 const LikeProvider = ({ children }) => {
-  const [isLike, setIsLike] = useState = (false)
-
-  const likeYes = () => {
-    setIsLike(true)
+  const [images, setImages] = useState([])
+  const getData = async () => {
+    const response = await fetch(PHOTO_URL)
+    const data = await response.json()
+    setImages(data.photos)
   }
 
-  const likeNo = () => {
-    setIsLike(false)
-  }
+  useEffect(() => {
+    getData()
+  }, [])
 
   return (
-    <LikeMe.Provider value={{ isLike, likeYes, likeNo }}>
+    <LikeMe.Provider value={{ images, setImages }}>
       {children}
     </LikeMe.Provider>
 

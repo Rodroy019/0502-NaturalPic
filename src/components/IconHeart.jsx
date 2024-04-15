@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types'
-
 const IconHeart = ({ filled }) => {
   return (
     <svg
@@ -12,10 +10,6 @@ const IconHeart = ({ filled }) => {
       />
     </svg>
   )
-}
-
-IconHeart.propTypes = {
-  filled: PropTypes.bool.isRequired
 }
 
 export default IconHeart
