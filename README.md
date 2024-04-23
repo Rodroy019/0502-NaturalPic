@@ -1,8 +1,8 @@
-# React + Vite
+# Desafío - Natural Pic
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Descripción:
+Natural Pic es una nueva plataforma dedicada a fotógrafos que promueve el interés por el cuidado ambiental y las fotos de paisajes naturales sin filtros. En este desafío estarás trabajando en el sistema de likes usando Context API para el manejo de estado global y React Router para la creación de las vistas Home y Favoritos.
+Para este desafío, descarga el material de apoyo en donde encontrarás una aplicación base con React Router que deberás completar, incluyendo lo correspondiente a Context API.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Vista Home](src/assets/readme/home.png)
+![Vista Favoritos](src/assets/readme/favoritos.png)

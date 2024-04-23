@@ -6,9 +6,13 @@ export const LikeMe = createContext()
 const LikeProvider = ({ children }) => {
   const [images, setImages] = useState([])
   const getData = async () => {
-    const response = await fetch(PHOTO_URL)
-    const data = await response.json()
-    setImages(data.photos)
+    try {
+      const response = await fetch(PHOTO_URL)
+      const data = await response.json()
+      setImages(data.photos)
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   useEffect(() => {
